@@ -190,6 +190,7 @@ function parseJSTS(code: string): TranslationItem[] {
     const parent = parts[0], sub = parts[1];
     b.add('Sub-Component', 'color-syntax-secondary', `<${m[1]}>`,
       `"<${m[1]}>" is the "${sub}" region of "${parent}". Dot-notation sub-components divide a parent into named slots — like labeling the header, body, and footer of a physical card.`,
+      m[1],
     );
   }
 
