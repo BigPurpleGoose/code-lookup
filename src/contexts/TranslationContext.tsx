@@ -28,7 +28,7 @@ const TranslationContext = createContext<TranslationContextValue | null>(null);
 
 export function TranslationProvider({ children }: { children: ReactNode }) {
   const [code, setCode] = useState("");
-  const [provider, setProvider] = useState<LLMProvider>("gemini");
+  const [provider, setProvider] = useState<LLMProvider>("local");
   const [apiKeys, setApiKeys] = useState<APIKeys>({
     gemini: import.meta.env.VITE_GEMINI_API_KEY ?? "",
     openai: import.meta.env.VITE_OPENAI_API_KEY ?? "",

@@ -7,7 +7,7 @@ interface Props {
 
 export default function SplitPane({ left, right }: Props) {
   return (
-    <div className="grid flex-1 overflow-hidden grid-rows-[2fr_3fr] md:grid-rows-1 md:grid-cols-2">
+    <div className="grid flex-1 overflow-hidden grid-rows-[2fr_3fr] md:grid-rows-1 md:grid-cols-[2fr_3fr]">
       {/* Left pane — editor */}
       <div
         className="overflow-hidden border-b md:border-b-0 md:border-r border-[var(--color-border)]"
