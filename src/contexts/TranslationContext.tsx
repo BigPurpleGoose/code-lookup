@@ -99,6 +99,7 @@ export function TranslationProvider({ children }: { children: ReactNode }) {
   );
 }
 
+// eslint-disable-next-line react-refresh/only-export-components
 export function useTranslationContext(): TranslationContextValue {
   const ctx = useContext(TranslationContext);
   if (!ctx)

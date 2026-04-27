@@ -395,7 +395,6 @@ export default function CodeInputPanel() {
         ),
       });
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [translationResult?.language]);
 
   // Sync external value changes into editor
